@@ -1,0 +1,86 @@
+<!-- patterns.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixie | Patterns</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body data-page="Patterns">
+  <aside class="sidebar">
+    <a href="pixie.html" class="logo">
+  <img src="logo.jpeg" alt="Pixie Logo">
+</a>
+    <nav class="side-nav">
+      <a class="nav-icon" href="pixie.html"><i class="bx bxs-home"></i></a>
+      <a class="nav-icon" href="nature.html"><i class="bx bx-leaf"></i></a>
+      <a class="nav-icon" href="travel.html"><i class="bx bxs-plane-alt"></i></a>
+      <a class="nav-icon" href="animals.html"><i class="bx bx-bone"></i></a>
+      <a class="nav-icon" href="food.html"><i class="bx bx-coffee"></i></a>
+      <a class="nav-icon" href="architecture.html"><i class="bx bx-building-house"></i></a>
+      <a class="nav-icon" href="people.html"><i class="bx bx-user"></i></a>
+      <a class="nav-icon" href="minimal.html"><i class="bx bx-circle"></i></a>
+      <a class="nav-icon active" href="patterns.html"><i class="bx bx-grid"></i></a>
+      <button class="nav-icon" id="favoriteBtn"><i class="bx bx-heart"></i></button>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <header class="header">
+      <button class="hamburger" id="hamburger"><i class="bx bx-menu"></i></button>
+      <div class="search-box">
+        <i class="bx bx-search"></i>
+        <input id="searchInput" type="text" placeholder="Search pattern photos">
+        <button id="clearSearch"><i class="bx bx-x"></i></button>
+      </div>
+      <div class="top-actions">
+        <button id="notifyBtn"><i class="bx bx-bell"></i></button>
+        <button id="themeBtn"><i class="bx bx-moon"></i></button>
+        <a href="profile.html" class="profile-link"><i class="bx bx-user"></i></a>
+      </div>
+    </header>
+
+    <nav class="category-row">
+      <a href="pixie.html">Featured</a>
+      <a href="nature.html">Nature</a>
+      <a href="travel.html">Travel</a>
+      <a href="animals.html">Animals</a>
+      <a href="food.html">Food</a>
+      <a href="architecture.html">Architecture</a>
+      <a href="people.html">People</a>
+      <a href="minimal.html">Minimal</a>
+      <a class="active" href="patterns.html">Patterns</a>
+    </nav>
+
+    <section class="page-title">
+      <h1>Patterns</h1>
+      <p>Textures, abstract surfaces and repeating visual details for inspiration.</p>
+    </section>
+
+    <section class="gallery-head">
+      <h2>Patterns Collections</h2>
+      <select id="sortSelect">
+        <option value="newest">Newest</option>
+        <option value="popular">Popular</option>
+      </select>
+    </section>
+
+    <section class="gallery" id="gallery"></section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+  <div class="lightbox" id="lightbox">
+    <button id="closeLightbox" class="close"><i class="bx bx-x"></i></button>
+    <button id="prevImg" class="light-nav left"><i class="bx bx-chevron-left"></i></button>
+    <div class="light-card">
+      <img id="lightImg">
+      <h3 id="lightTitle"></h3>
+      <p id="lightCategory"></p>
+    </div>
+    <button id="nextImg" class="light-nav right"><i class="bx bx-chevron-right"></i></button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

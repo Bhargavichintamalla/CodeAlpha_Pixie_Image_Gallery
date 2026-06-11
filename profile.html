@@ -1,0 +1,45 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixie | Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body class="login-body">
+  <section class="login-card">
+    <a href="pixie.html" class="logo">
+  <img src="logo.jpeg" alt="Pixie Logo">
+</a>
+
+    <div class="profile-outline">
+      <i class="bx bx-user"></i>
+    </div>
+
+    <h1>Welcome Back</h1>
+    <p>Login to view your profile, favorite images and works.</p>
+
+    <form id="loginForm">
+      <input id="userName" type="text" placeholder="Your name" required>
+      <input id="userEmail" type="email" placeholder="Email address" required>
+      <input id="userWork" type="text" placeholder="Your work / role" required>
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <script>
+    const form = document.getElementById("loginForm");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      localStorage.setItem("pixieUser", document.getElementById("userName").value);
+      localStorage.setItem("pixieWelcome", "yes");
+
+      window.location.href = "pixie.html";
+    });
+  </script>
+</body>
+</html>

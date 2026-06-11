@@ -1,0 +1,94 @@
+<!-- nature.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixie | Nature</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body data-page="Nature">
+  <aside class="sidebar">
+    <a href="pixie.html" class="logo">
+  <img src="logo.jpeg" alt="Pixie Logo">
+</a>
+
+    <nav class="side-nav">
+      <a class="nav-icon" href="pixie.html" title="Home"><i class="bx bxs-home"></i></a>
+      <a class="nav-icon active" href="nature.html" title="Nature"><i class="bx bx-leaf"></i></a>
+      <a class="nav-icon" href="travel.html" title="Travel"><i class="bx bxs-plane-alt"></i></a>
+      <a class="nav-icon" href="animals.html" title="Animals"><i class="bx bx-bone"></i></a>
+      <a class="nav-icon" href="food.html" title="Food"><i class="bx bx-coffee"></i></a>
+      <a class="nav-icon" href="architecture.html" title="Architecture"><i class="bx bx-building-house"></i></a>
+      <a class="nav-icon" href="people.html" title="People"><i class="bx bx-user"></i></a>
+      <a class="nav-icon" href="minimal.html" title="Minimal"><i class="bx bx-circle"></i></a>
+      <a class="nav-icon" href="patterns.html" title="Patterns"><i class="bx bx-grid"></i></a>
+      <button class="nav-icon" id="favoriteBtn" title="Favorites"><i class="bx bx-heart"></i></button>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <header class="header">
+      <button class="hamburger" id="hamburger"><i class="bx bx-menu"></i></button>
+
+      <div class="search-box">
+        <i class="bx bx-search"></i>
+        <input id="searchInput" type="text" placeholder="Search nature photos">
+        <button id="clearSearch"><i class="bx bx-x"></i></button>
+      </div>
+
+      <div class="top-actions">
+        <button id="notifyBtn"><i class="bx bx-bell"></i></button>
+        <button id="themeBtn"><i class="bx bx-moon"></i></button>
+        <a href="profile.html" class="profile-link" title="Profile"><i class="bx bx-user"></i></a>
+      </div>
+    </header>
+
+    <nav class="category-row">
+      <a href="pixie.html">Featured</a>
+      <a class="active" href="nature.html">Nature</a>
+      <a href="travel.html">Travel</a>
+      <a href="animals.html">Animals</a>
+      <a href="food.html">Food</a>
+      <a href="architecture.html">Architecture</a>
+      <a href="people.html">People</a>
+      <a href="minimal.html">Minimal</a>
+      <a href="patterns.html">Patterns</a>
+    </nav>
+
+    <section class="page-title">
+      <h1>Nature</h1>
+      <p>Fresh landscapes, forests, leaves, flowers and peaceful outdoor moments.</p>
+    </section>
+
+    <section class="gallery-head">
+      <h2>Nature Collections</h2>
+
+      <select id="sortSelect">
+        <option value="newest">Newest</option>
+        <option value="popular">Popular</option>
+      </select>
+    </section>
+
+    <section class="gallery" id="gallery"></section>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <div class="lightbox" id="lightbox">
+    <button id="closeLightbox" class="close"><i class="bx bx-x"></i></button>
+    <button id="prevImg" class="light-nav left"><i class="bx bx-chevron-left"></i></button>
+
+    <div class="light-card">
+      <img id="lightImg" alt="">
+      <h3 id="lightTitle"></h3>
+      <p id="lightCategory"></p>
+    </div>
+
+    <button id="nextImg" class="light-nav right"><i class="bx bx-chevron-right"></i></button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
