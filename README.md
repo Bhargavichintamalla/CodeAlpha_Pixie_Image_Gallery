@@ -74,6 +74,7 @@ Option 1: Open Directly in Browser
 2. Open the project folder.
 3. Double-click on pixie.html.
 4. The website will open in your default browser.
+
 Option 2: Run Using VS Code Live Server
 1. Open the project folder in VS Code.
 2. Install the Live Server extension if it is not already installed.
